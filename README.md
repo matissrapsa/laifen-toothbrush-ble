@@ -2,11 +2,7 @@
 Reverse-engineering Laifen toothbrush BLE (Bluetooth Low Energy) commands with end goal of creating Home Assistant integration.
 
 ## Overview
-Laifen toothbrushes use Bluetooth Low Energy (BLE) for communication. This repository documents how to send commands to control the toothbrush, including:
-- Turning ON/OFF
-- Adjusting settings for each mode
-- Changing brushing modes
-- Toggling settings
+Laifen toothbrushes use Bluetooth Low Energy (BLE) for communication. This repository documents how to read commands from the toothbrush, including:
 
 ## Device Details
 - **Model:** LFTB01-P-6805
@@ -35,14 +31,14 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - 0B - Mode 4 Vibration strenght (01 to 14)
 - 06 - Mode 4 Oscillation range (01 to 0A)
 - 06 - Mode 4 Oscillation speed (01 to 0A)
-- 00 - 
-- 63 - Maybe battery percentage ?? 00-64
-- 01 - 
+- 00 - Airplane mode On or off (01, 00)
+- 63 - Maybe battery percentage another toothbrush had it at 36 (00-64)
+- 01 - 30 sec reminder On or off (01, 00)
 - 00 - 
 - 78 - 
-- 01 - Power control On or off (00, 01)
-- 00 - 
-- 00 - 
-- A3 - Changes sometimes Checksum or padding?
+- 01 - High freqency mode, mode 4 enabled On or off (01, 00)
+- 00 - Power control On or off (01, 00)
+- 00 - Emergency shutdown On or off (01, 00)
+- A3 - Checksum or padding
 
-## Data collected using nRF Connect app
+## Data collected using nRF Connect app and 2 diferent toothbrushes
