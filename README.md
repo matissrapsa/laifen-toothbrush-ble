@@ -43,6 +43,6 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - 01 - Power control On or off (00, 01)
 - 00 - 
 - 00 - 
-- A3 - Changes sometimes with the power state
+- A3 - Changes sometimes Checksum or padding?
 
 ## Data collected using nRF Connect app
