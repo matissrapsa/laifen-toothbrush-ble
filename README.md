@@ -22,7 +22,7 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - 0A - 
 - 02 - 
 - 15 - 
-- 03 - Current mode selected (00 for mode 1, 03 for mode 4)
+- 03 - Current mode selected (00 for mode 1, 01 for mode 2, 02 for mode 3, 03 for mode 4) mode 4 only available if high frequency mode is enabled
 - 05 - Mode 1 Vibration strenght
 - 05 - Mode 1 Oscillation range (01 to 0A)
 - 05 - Mode 1 Oscillation speed (01 to 0A)
