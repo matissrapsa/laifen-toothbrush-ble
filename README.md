@@ -35,7 +35,7 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - 63 - Maybe battery percentage another toothbrush had it at 36 (00-64)
 - 01 - 30 sec reminder On or off (01, 00)
 - 00 - 
-- 78 - 
+- 78 - Brushing timer 78=2min, 96=2,5min
 - 01 - High freqency mode, mode 4 enabled On or off (01, 00)
 - 00 - Power control On or off (01, 00)
 - 00 - Emergency shutdown On or off (01, 00)
