@@ -41,4 +41,8 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - 00 - Emergency shutdown On or off (01, 00)
 - A3 - Checksum or padding
 
-## Data collected using nRF Connect app and 2 diferent toothbrushes
+## Writing data
+- chanel 0x0028 write 0x0001 to enable chanel 0x0027
+- chanel 0x0027 data can be written
+- AA0F010101A4 Turn On
+- AA0F010100A5 Turn Off 
