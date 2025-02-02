@@ -4,13 +4,6 @@ Reverse-engineering Laifen toothbrush BLE (Bluetooth Low Energy) commands with e
 ## Overview
 Laifen toothbrushes use Bluetooth Low Energy (BLE) for communication. This repository documents how to read commands from the toothbrush, including:
 
-## Device Details
-- **Model:** LFTB01-P-6805
-- **BLE UUIDs:**
-  - **Service UUID:** `0000ff01-0000-1000-8000-00805f9b34fb`
-  - **Control Characteristic UUID:** `0000ff02-0000-1000-8000-00805f9b34fb`
-- **Supports:** `READ, WRITE, NOTIFY`
-
 ## 0xFF02 Characteristics breakdown, the whole settings are stored in a single HEX string
 Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05-05-05-04-06-06-06-06-06-0B-06-06-00-63-01-00-78-01-00-00-A3
 
