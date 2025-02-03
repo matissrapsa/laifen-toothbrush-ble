@@ -39,10 +39,10 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - chanel 0x0027 data can be written
 - AA0F010101A4 Turn On
 - AA0F010100A5 Turn Off
-- AA0F010201A3 Enable mode 1
-- AA0F010202A2 Enable mode 2
-- AA0F010203A1 Enable mode 3
-- AA0F010204A0 Enable mode 4
+- AA0F010201A3 Enable mode 1 (Not tested)
+- AA0F010202A2 Enable mode 2 (Not tested)
+- AA0F010203A1 Enable mode 3 (Not tested)
+- AA0F010204A0 Enable mode 4 (Not tested)
 
 ## Chanel's
 - handle = 0x0029, uuid = 00002901-0000-1000-8000-00805f9b34fb
