@@ -38,9 +38,25 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - chanel 0x0028 write 0x0001 to enable chanel 0x0027
 - chanel 0x0027 data can be written
 - AA0F010101A4 Turn On
-- AA0F010100A5 Turn Off 
+- AA0F010100A5 Turn Off
+- AA0F010101A4 Enable mode 1
+- AA0F010102A3 Enable mode 2
+- AA0F010103A2 Enable mode 3
+- AA0F010104A1 Enable mode 4
 
 ## Chanel's
 - handle = 0x0029, uuid = 00002901-0000-1000-8000-00805f9b34fb
+- handle = 0x002c, uuid = 00002901-0000-1000-8000-00805f9b34fb
 - handle = 0x0028, uuid = 00002902-0000-1000-8000-00805f9b34fb
 - handle = 0x0027, uuid = 0000ff02-0000-1000-8000-00805f9b34fb
+- handle = 0x0001, uuid = 00002800-0000-1000-8000-00805f9b34fb
+- handle = 0x000a, uuid = 00002a05-0000-1000-8000-00805f9b34fb
+- handle = 0x000b, uuid = 00002902-0000-1000-8000-00805f9b34fb
+- handle = 0x000c, uuid = 00002800-0000-1000-8000-00805f9b34fb
+- handle = 0x001e, uuid = 00002a50-0000-1000-8000-00805f9b34fb
+- handle = 0x001f, uuid = 00002800-0000-1000-8000-00805f9b34fb
+- handle = 0x0023, uuid = 5833ff03-9b8b-5191-6142-22a4536ef123
+- handle = 0x0024, uuid = 00002902-0000-1000-8000-00805f9b34fb
+- handle = 0x0025, uuid = 00002800-0000-1000-8000-00805f9b34fb
+- handle = 0x002b, uuid = 0000ff10-0000-1000-8000-00805f9b34fb
+
