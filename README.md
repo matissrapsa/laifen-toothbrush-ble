@@ -49,6 +49,8 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - AA0B010101A0 Enable 30 sec reminder
 - AA07010100AD Disable Aeroplane mode
 - AA07010101AC Enable Aeroplane mode
+- AA14010100BE Emergency mode Off
+- AA14010101BF Emergency mode On
 
 ## Chanel's
 - handle = 0x0029, uuid = 00002901-0000-1000-8000-00805f9b34fb
