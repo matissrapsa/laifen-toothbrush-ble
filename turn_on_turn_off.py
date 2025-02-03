@@ -12,7 +12,10 @@ NOTIFY_DESCRIPTOR_UUID = "00002902-0000-1000-8000-00805f9b34fb"  # Descriptor fo
 ENABLE_NOTIFICATIONS = bytearray([0x01, 0x00])
 CMD_ON = bytearray.fromhex("AA0F010101A4")
 CMD_OFF = bytearray.fromhex("AA0F010100A5")
-
+MODE_1 = bytearray.fromhex("AA04010400020505A9")
+MODE_2 = bytearray.fromhex("AA04010401040606AE")
+MODE_3 = bytearray.fromhex("AA04010402070707AE")
+MODE_4 = bytearray.fromhex("AA04010403140A0ABC")
 
 async def connect_and_control():
     """Connects to the Laifen toothbrush and sends BLE commands."""
@@ -35,7 +38,27 @@ async def connect_and_control():
         await client.write_gatt_char(CHARACTERISTIC_UUID, CMD_ON)
         await asyncio.sleep(2)
 
-        # Step 3: Send OFF command to `0x0027` (HANDLE_CONTROL)
+        # Step 3: Send mode 2 command to `0x0027` (HANDLE_CONTROL)
+        print("Setting mode 2")
+        await client.write_gatt_char(CHARACTERISTIC_UUID, MODE_2)
+        await asyncio.sleep(2)
+
+        # Step 4: Send mode 3 command to `0x0027` (HANDLE_CONTROL)
+        print("Setting mode 3")
+        await client.write_gatt_char(CHARACTERISTIC_UUID, MODE_3)
+        await asyncio.sleep(2)
+
+        # Step 5: Send mode 4 command to `0x0027` (HANDLE_CONTROL)
+        print("Setting mode 4")
+        await client.write_gatt_char(CHARACTERISTIC_UUID, MODE_4)
+        await asyncio.sleep(2)
+
+        # Step 6: Send mode 1 command to `0x0027` (HANDLE_CONTROL)
+        print("Setting mode 1")
+        await client.write_gatt_char(CHARACTERISTIC_UUID, MODE_1)
+        await asyncio.sleep(2)
+
+        # Step 7: Send OFF command to `0x0027` (HANDLE_CONTROL)
         print("Turning toothbrush OFF...")
         await client.write_gatt_char(CHARACTERISTIC_UUID, CMD_OFF)
         await asyncio.sleep(2)
