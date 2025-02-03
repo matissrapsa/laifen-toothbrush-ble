@@ -41,5 +41,6 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - AA0F010100A5 Turn Off 
 
 ## Chanel's
+- handle = 0x0029, uuid = 00002901-0000-1000-8000-00805f9b34fb
 - handle = 0x0028, uuid = 00002902-0000-1000-8000-00805f9b34fb
 - handle = 0x0027, uuid = 0000ff02-0000-1000-8000-00805f9b34fb
