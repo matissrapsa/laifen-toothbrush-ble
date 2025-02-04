@@ -19,3 +19,20 @@
 - Characteristic value was written successfully
 - Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 48 01
 - Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 48 01
+- 
+
+- [C0:00:00:01:68:05][LE]> char-write-req 0x0028 0100 #enable notifications
+- Notification handle = 0x0027 value: aa 01 02 13 02 00 09 03 58 58 58 54 00 01 42 00 00 59 04 04
+- Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 36 01
+- Characteristic value was written successfully
+- [C0:00:00:01:68:05][LE]> char-write-req 0x0027 AA06010101AD #go limp before cslibration
+- Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 36 01
+- Notification handle = 0x0027 value: aa 06 02 01 00 af
+- Characteristic value was written successfully
+- [C0:00:00:01:68:05][LE]> char-write-req 0x0027 AA06010103AF #calibration, only run when aligned
+- Characteristic value was written successfully
+- Notification handle = 0x0027 value: aa 06 02 01 00 af
+- Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 36 01
+- Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 36 01
+- Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 36 01
+- Notification handle = 0x0027 value: aa 0a 02 15 02 02 05 05 04 06 06 07 07 07 14 0a 0a 00 36 01
