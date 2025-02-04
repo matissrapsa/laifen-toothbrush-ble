@@ -53,7 +53,16 @@ Properties: NOTIFY, READ, WRITE, WRITE NO RESPONSE Value: (Ox) AA-0A-02-15-03-05
 - AA14010101BF Emergency mode On
 - AA06010101AD Go limp before calibration
 - AA06010103AF Calibration mode
-- 
+- Timer modes
+- AA050102012C81 5 min
+- AA050102010EA3 4,5 min
+- AA05010200f05C 4 min
+- AA05010200d27E 3,5 min
+- AA05010200B418 3 min
+- AA05010200963A 2,5 min
+- AA0501020078D4 2 min
+- AA050102005AF6 1,5 min
+- AA050102003C90 1 min
 
 ## Chanel's
 - handle = 0x0029, uuid = 00002901-0000-1000-8000-00805f9b34fb
