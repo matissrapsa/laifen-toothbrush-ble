@@ -1,5 +1,5 @@
 # Laifen Toothbrush Bluetooth Control
-Reverse-engineering Laifen toothbrush BLE (Bluetooth Low Energy) commands with end goal of creating Home Assistant integration.
+Reverse-engineering Laifen toothbrush BLE (Bluetooth Low Energy) commands with end goal of creating Home Assistant integration. Current best integration candidate is https://github.com/UrbanTechIO/Laifen
 
 ## Overview
 Laifen toothbrushes use Bluetooth Low Energy (BLE) for communication. This repository documents how to read commands from the toothbrush, including:
